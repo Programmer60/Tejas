@@ -1,23 +1,13 @@
 {
   "version": 2,
-  "name": "telemedicine-app",
-  "builds": [
-    {
-      "src": "Client/package.json",
-      "use": "@vercel/static-build",
-      "config": {
-        "distDir": "dist"
-      }
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/Client/$1"
-    }
-  ],
-  "buildCommand": "cd Client && npm install && npm run build",
+  "buildCommand": "cd Client && npm ci && npm run build",
   "outputDirectory": "Client/dist",
-  "installCommand": "cd Client && npm install",
-  "framework": "vite"
+  "installCommand": "cd Client && npm ci",
+  "framework": "vite",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
 }

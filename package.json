@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Full-stack telemedicine platform with React frontend and Node.js backend",
   "scripts": {
-    "build": "cd Client && npm install && npm run build",
+    "build": "cd Client && npm ci && npm run build",
     "start": "cd Server && npm start",
     "dev:client": "cd Client && npm run dev",
     "dev:server": "cd Server && npm run dev",
@@ -17,8 +17,5 @@
     "mongodb"
   ],
   "author": "Your Name",
-  "license": "MIT",
-  "devDependencies": {
-    "vite": "^7.1.4"
-  }
+  "license": "MIT"
 }
