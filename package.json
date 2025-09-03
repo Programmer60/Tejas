@@ -9,7 +9,16 @@
     "dev:server": "cd Server && npm run dev",
     "install:all": "cd Client && npm install && cd ../Server && npm install"
   },
-  "keywords": ["telemedicine", "healthcare", "react", "nodejs", "mongodb"],
+  "keywords": [
+    "telemedicine",
+    "healthcare",
+    "react",
+    "nodejs",
+    "mongodb"
+  ],
   "author": "Your Name",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "vite": "^7.1.4"
+  }
 }
