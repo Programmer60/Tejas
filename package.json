@@ -1,0 +1,15 @@
+{
+  "name": "telemedicine-platform",
+  "version": "1.0.0",
+  "description": "Full-stack telemedicine platform with React frontend and Node.js backend",
+  "scripts": {
+    "build": "cd Client && npm install && npm run build",
+    "start": "cd Server && npm start",
+    "dev:client": "cd Client && npm run dev",
+    "dev:server": "cd Server && npm run dev",
+    "install:all": "cd Client && npm install && cd ../Server && npm install"
+  },
+  "keywords": ["telemedicine", "healthcare", "react", "nodejs", "mongodb"],
+  "author": "Your Name",
+  "license": "MIT"
+}
